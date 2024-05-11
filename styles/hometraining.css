@@ -1,0 +1,83 @@
+.htraining__top{
+    margin-top: 50px;
+    text-align: center;
+}
+.highlights{
+    color: var(--primary-color);
+}
+
+.htraining__top h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.htraining__top p {
+    color: var(--heading-color);
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.htraining__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+   
+    border-radius: 0.5rem;
+    display: flex; 
+    flex-direction: column;
+    padding: 50px 60px;
+    width: 70%; 
+    
+
+}
+.coachs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+
+}
+.right-tt img {
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    background-color: #d3cef2;
+}
+.right-tt , .left--tt{
+    padding: 20px;
+}
+.right-tt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* This centers the child elements horizontally */
+    justify-content: center;  /* This centers the child elements vertically if needed */
+}
+.coachs .left-tt h2{
+    color: #d7337a;
+}
+.left-tt span{
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.left-tt>:nth-child(3){
+    
+    margin-top: 20px;
+    font-size:17px;
+}
+.form-check-label {
+    display: block; /* Ensures the label is on a new line below the checkbox */
+}
+
+.text-muted {
+    color:#207c38;
+    font-size: 1rem; 
+    padding-left: 20px; /* Aligns the text under the label text */
+}
+
+

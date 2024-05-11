@@ -1,0 +1,108 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.yahia_part{
+    background-color: var(--primary-color);
+}
+.yahia_part :where(.partOne,.partTwo,.partThree){
+    width: calc(100%/3);
+}
+.yahia_part .partOne:hover img{
+    box-shadow: 5px 5px 5px rgba(184, 184, 184, 0.384);
+
+}
+.yahia_part .partTwo:hover img{
+    box-shadow: 5px 5px 5px rgba(184, 184, 184, 0.384);
+
+}
+.yahia_part .partThree:hover img{
+    box-shadow: 5px 5px 5px rgba(184, 184, 184, 0.384);
+
+}
+.yahia_part img{
+    width: 150px !important;
+    height: 150px !important;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.signInModal {
+    width: 30%;
+    position : absolute;
+    top: 50%;
+    left : 50%;
+    transform: translate(-50%,-50%) ;
+    height: auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.signInModal .closeModal{
+    cursor: pointer;
+}
+.couv_container {
+    width: 75%;
+}
+.couv .blackPart{
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+.couv .couv_container .couvLineOne img{
+    width: 300px;
+}
+.couv .couv_container .couvLineTwo > img{
+    width: 20%;
+}
+.couv .couv_container .couvLineTwo div{
+    width: 80%;
+}
+.couv .couv_container .couvLineTwo div img{
+    width: 100%;
+}
+/* Responsive part */
+@media screen and (max-width : 500px) {
+
+    
+}
+@media screen and (max-width : 992px) {
+    .couv .blackPart{
+        width: 100%;
+    }
+    .couv .couv_container .couvLineOne img{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 768px) {
+    .signInModal {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    .couv_container {
+        width: 100% !important;
+    }
+    .couv .blackPart :where(h3,p){
+        font-size: 3vw;
+    }
+    .couv .couv_container .couvLineTwo > img{
+        display: none;
+    }
+    .couv .couv_container .couvLineTwo div{
+        width: 100%;
+    }
+}
+@media screen and (min-width : 768px) and (max-width : 1200px){
+    .signInModal {
+        width: 40%;
+        height: auto;
+    }
+    .parts h3{
+        font-size: 18px;
+    }
+    .parts p{
+        font-size: 14px;
+    }
+}

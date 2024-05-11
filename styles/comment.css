@@ -1,0 +1,87 @@
+.comment__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+     /* Adjusted to reduce space */
+}
+
+.comment__img,
+.comment__content {
+    width: 40%;
+    padding: 5px; /* Added padding to manage spacing better */
+}
+
+.comment__img img {
+    width: 50%; /* Updated to fill the container */
+    display: block; /* Ensures no extra space below the image */
+}
+
+.comment__content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .comment__input {
+    outline: none;
+    padding: 10px 50px 10px 20px; /* Right padding is larger to accommodate the button */
+    border: 2px solid #ccc;
+    border-radius: 20px 20px 20px 2px;
+    width: 100%;
+  }
+  .comment__input:focus{
+    outline: 5px #6f55f23d solid;
+  }
+  
+  .comment__btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .reviews{
+    text-align: right; 
+    padding-right: 20px; 
+    margin-top: 10px; 
+  }
+  .reviews a{
+    
+    color:var(--heading-color);
+    cursor:pointer;
+    transition: 0.3s;
+    font-size: 1.03rem;
+    text-decoration: none !important;
+}
+.reviews a:hover{
+    color:#6f55f2;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .comment__wrapper {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    .comment__img, .comment__content {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .comment__img img {
+        width: 40%; /* Slightly smaller image on mobile */
+        margin: 0 auto; /* Centering the image */
+    }
+
+    .comment__content h2 {
+        font-size: 1.2rem;
+    }
+}

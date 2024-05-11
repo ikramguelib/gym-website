@@ -1,0 +1,48 @@
+footer{
+    background-color: rgb(32, 33, 36);
+    color : white;
+}
+footer p {
+    color : #c4c5c7;
+    font-size: 14px;
+    margin-top: 2rem;
+}
+footer > div > div:nth-child(1){
+    width: 35%;
+
+}
+footer > div > :where(div:nth-child(2),div:nth-child(3),div:nth-child(4)){
+    width: calc((100%-35% )/ 3);
+}
+footer ul{
+    padding-left: 0px;
+    margin-top: 2rem;
+    margin-bottom: 0px;
+}
+footer ul li{
+    list-style: none;
+    color: #c4c5c7;
+    width: 100%;
+    height: 30px;
+}
+footer ul li:hover{
+    color : white;
+    font-weight: bold;
+}
+footer a{
+    width: 30px;
+    height: 30px;
+    background-color: #292a2d;
+}
+footer a:hover{
+    background-color: rgba(75, 76, 79, 0.49)
+}
+
+@media screen and (max-width:768px){
+    footer ul{
+        margin-top: 1rem;
+    }
+    footer > div > :where(div:nth-child(1),div:nth-child(2),div:nth-child(3),div:nth-child(4)){
+        width: 100% !important;
+    }
+}

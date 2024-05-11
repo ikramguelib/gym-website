@@ -1,0 +1,50 @@
+
+
+.nutiration__top {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.nutiration__top h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.nutiration__top p {
+    color: var(--heading-color);
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.nutirition__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.form{
+   
+    border-radius: 0.5rem;
+    display: flex; 
+    flex-direction: column;
+    padding: 50px 60px;
+    width: 70%; 
+    
+
+}
+.col label .prix{
+    background: var(--bg-gradient);
+    border-radius: 10%;
+    color: #ffff;
+    width: 95px;
+    align-items: center;
+    text-align: center;
+}
+.col label span {
+    color: greenyellow;
+    font-size: large;
+}
+   
+

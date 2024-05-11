@@ -1,0 +1,30 @@
+.shop-card {
+    display: flex;
+    flex-direction: column;
+    height: 80%;  /* Makes sure all cards are the same height */
+}
+
+ .card {
+    height: 80%;  /* Makes sure card uses the full height of its container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space inside the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+}
+.card img{
+    height: 45%;
+    object-fit: cover;
+}
+
+.register__btn:hover {
+    background-color: #28a745; /* Change to green on hover */
+}
+.card-body .card-text strong{
+    font-size: large
+
+}
