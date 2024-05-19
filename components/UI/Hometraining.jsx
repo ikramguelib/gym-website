@@ -205,7 +205,11 @@ export default function Hometraining() {
     <div className="coachs mt-4 d-flex flex-wrap-reverse flex-md-nowrap">
       <div className="left-tt">
         <h2>{coaches[selected].name}</h2>
-        <span>{coaches[selected].review}</span>
+        <ul>
+        {coaches[selected].review.split(' - ').map((item, index) => (
+            <li key={index}>- {item}</li>
+        ))}
+    </ul>
         <h5>
           {coaches[selected].name}
           {" "}

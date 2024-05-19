@@ -14,7 +14,7 @@ const Start =()=>{
                         Stay home and we will <span className='highlights'>Come to you </span>
                     </h2>
                     <p>
-                        In In-home customer training service you can choose your personal coach who will come to you house and train you in addition of bringing sport equipment with her ,and all that in affordable prices.      
+                        In In-home customer training service you can choose your personal coach who will come to your house and train you in addition of bringing sport equipment with her ,and all that in affordable prices.      
                     </p>
                     <Link href={'./Start'}><button className="register__btn  " >Get Started</button></Link>
                 </div>

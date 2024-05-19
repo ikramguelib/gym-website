@@ -38,11 +38,11 @@ const Exercises=()=>{
                     </Link>
                     <div>
                         <Link href={'./'} style={{textDecoration : 'none' , color : "black"}}>
-                         <h5  className='fw-bold'>Coursec</h5>
+                         <h5  className='fw-bold'>Courses</h5>
                         </Link>
                         <p>
-                             In this service you will find scientific nutrition programs prepared by experts ,
-                             to help stay healthy, gain weight and lost weight.
+                        These training courses are for all those interested in sport field and who want to enhance their sport's knowledge. 
+                        And take attestation to add to cv
                         </p>
                     </div>
                 </div>
@@ -56,8 +56,8 @@ const Exercises=()=>{
                          <h5 className='fw-bold'>Sport Shop</h5>
                         </Link>
                         <p>
-                             In this service you will find scientific nutrition programs prepared by experts ,
-                             to help stay healthy, gain weight and lost weight.
+                        It's a link between marchant and the customer, 
+                        to purchase and borrow sports equipment and supplements easily.
                         </p>
                     </div>
                 </div>
