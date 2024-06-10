@@ -1,0 +1,38 @@
+
+
+.contact__top {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.contact__top h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.contact__top p {
+    color: var(--heading-color);
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.form{
+    border-radius: 0.5rem;
+    display: flex; 
+    flex-direction: column;
+    padding: 30px 39px;
+    width: 40%; 
+}
+
+
+   
+

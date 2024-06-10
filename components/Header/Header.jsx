@@ -39,7 +39,12 @@ const nav_links = [
   },
   {
     path: "#about",
-    display: "About as",
+    display: "About us",
+    
+  },
+  {
+    path: "./Contact",
+    display: "Contact us",
     
   },
 ];
@@ -184,8 +189,28 @@ const Header = () => {
                 </svg>
               </li>
               <li className="border rounded d-flex align-items-center justify-content-between px-2 py-2 mt-2">
-                <Link href={"/about"} style={{textDecoration : 'none',color : 'black',width : "100%",height : "100%"}}>
+                <Link href={"#about"} style={{textDecoration : 'none',color : 'black',width : "100%",height : "100%"}}>
                   About us
+                </Link>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={20}
+                  height={20}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M10 7L15 12L10 17"
+                    stroke="#000000"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </li>
+              <li className="border rounded d-flex align-items-center justify-content-between px-2 py-2 mt-2">
+                <Link href={"./Contact"}  style={{textDecoration : 'none',color : 'black',width : "100%",height : "100%"}}>
+                  Contact us
                 </Link>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

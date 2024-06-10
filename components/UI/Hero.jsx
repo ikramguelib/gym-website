@@ -108,7 +108,7 @@ const Hero = () => {
                   />
                 </svg>
                 <h5>
-                  find new <br /> gym near you{" "}
+                Bring the gym <br /> to your home{" "}
                 </h5>
               </div>
 
