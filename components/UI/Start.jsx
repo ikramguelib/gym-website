@@ -5,11 +5,11 @@ const Start =()=>{
     return <section>
         <div className="container" id='start'>
             <div className="start__wrapper d-flex flex-wrap flex-md-nowrap ">
-                <div className="start__img">
+                <div className="start__img" data-aos="fade-right" data-aos-duration='1000'>
                     <img src={"./assets/img/trainer.jpg"} className='rounded' alt="" />
 
                 </div>
-                <div className="start__content w-100 w-md-auto">
+                <div className="start__content w-100 w-md-auto" data-aos="fade-left" data-aos-duration='1000'>
                     <h2 className='section__title'>
                         Stay home and we will <span className='highlights'>Come to you </span>
                     </h2>

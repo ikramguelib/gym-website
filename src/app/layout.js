@@ -4,6 +4,7 @@ import '../../styles/App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
+import "aos/dist/aos.css";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {

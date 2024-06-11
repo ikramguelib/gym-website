@@ -17,7 +17,7 @@ const Exercises=()=>{
             {/*______________ exercise list ____________*/}
             <div className='yahia_part bg-light d-flex flex-md-nowrap flex-wrap justify-content-between gap-3 align-items-center py-5 px-3 rounded'>
                 
-                <div className='partOne d-flex gap-4 align-items-center w-md-auto w-100'>
+                <div className='partOne d-flex gap-4 align-items-center w-md-auto w-100' data-aos="zoom-in"data-aos-duration='1500' >
                     <Link href={'./Nutiration'}>
                         <img src={'./assets/img/nutiration.jpg'} className='rounded' alt="" loading='lazy'/>
                     </Link>
@@ -32,7 +32,7 @@ const Exercises=()=>{
                     </div>
                 </div>
 
-                <div className='partTwo d-flex gap-4 align-items-center w-md-auto w-100'>
+                <div className='partTwo d-flex gap-4 align-items-center w-md-auto w-100' data-aos="zoom-in" data-aos-duration='1500'>
                     <Link href={'./'}>
                         <img src={"./assets/img/cources.jpg"} className='rounded' alt="" loading='lazy'/>
                     </Link>
@@ -47,7 +47,7 @@ const Exercises=()=>{
                     </div>
                 </div>
 
-                <div className='partThree d-flex gap-4 align-items-center w-md-auto w-100'>
+                <div className='partThree d-flex gap-4 align-items-center w-md-auto w-100' data-aos="zoom-in" data-aos-duration='1500'>
                     <Link href={'./Sportshop'}>
                         <img src={"./assets/img/storshop.jpg"} className='rounded' alt="" loading='lazy'/>
                     </Link>

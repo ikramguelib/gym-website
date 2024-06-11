@@ -34,28 +34,30 @@
     flex:1;
     position: relative;
     text-align: center;
+    
 }
 .right-t>img{
     position: relative;
-    width: 17rem;
+    width: 15rem;
     height: 20rem;
     object-fit: cover;
-    right: 2.5rem;
+    right: -5rem;
     top: 2rem;
     background-color: #d3cef2;
+    justify-content:center
 }
 .right-t>:nth-child(1){
    position: absolute;
-    width: 17rem;
+    width: 15rem;
     height: 20rem;
     border: 2px solid #d7337a;
     background-color: transparent;
-    right: 9rem;
+    right: 2.8rem;
     top: 0.9rem;
 }
 .right-t>:nth-child(2){
     position: absolute;
-    width: 17rem;height: 19rem;right: 7rem;top: 4rem;
+    width: 15rem;height: 19rem;right: 0.6rem;top: 4rem;
     background: var(--bg-gradient);
 }
 .arrows{
@@ -85,11 +87,12 @@
       position: relative;
       flex: 1;
       text-align: right;
+    
     }
   
     .right-t > img {
       position: absolute;
-      width: 17rem;
+      width: 15rem;
       height: 20rem;
       right: 8rem;
       margin-top: 0;
@@ -104,7 +107,7 @@
 
     .right-t>:nth-child(1){
         position: absolute;
-        width: 17rem;
+        width: 15rem;
         height: 20rem;
         border: 2px solid #d7337a;
         background-color: transparent;
@@ -113,7 +116,7 @@
     }
     .right-t>:nth-child(2){
         position: absolute;
-        width: 17rem;height: 19rem;right: 7rem;top: 4rem;
+        width: 15rem;height: 19rem;right: 7rem;top: 4rem;
         background: var(--bg-gradient);
     }
   }

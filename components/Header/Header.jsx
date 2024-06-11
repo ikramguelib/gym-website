@@ -25,13 +25,14 @@ const nav_links = [
     display: "Home",
   },
   {
-    path: "#services",
-    display: "Services",
-  },
-  {
     path: "#start",
     display: "Training",
   },
+  {
+    path: "#services",
+    display: "Services",
+  },
+  
   {
     path: "#pricing",
     display: "Pricing",
@@ -61,7 +62,7 @@ const Header = () => {
         {/*__________LOGO________ */}
         <div className="logo brand d-flex justify-content-center align-items-center">
           <Link className="logo__img" href={'./'}>
-            <img src={"./assets/img/logo.jpg"} alt="" />
+            <img src={"./assets/img/logosb.png"} alt="" />
           </Link>
           <h3 style={{ marginBottom: "0px" }}></h3>
         </div>
@@ -118,7 +119,7 @@ const Header = () => {
             <div className="d-flex justify-content-between align-items-center border-bottom pb-2">
             <div className="logo brand d-flex justify-content-center align-items-center">
           <div className="logo__img">
-            <img src={"./assets/img/dumble.png"} alt="" />
+            <img src={"./assets/img/logosb.png"} alt="" />
           </div>
           <h3 style={{ marginBottom: "0px" }}>Fitnecy </h3>
         </div>

@@ -1,8 +1,8 @@
-"use client"
-import React, { useState } from 'react';
-import "../../styles/hometraining.css"
-import { testimonialsData } from '../../public/data/TestimonialsData';
-import { coaches } from '../../public/data/coaches';
+"use client";
+import React, { useState } from "react";
+import "../../styles/hometraining.css";
+import { testimonialsData } from "../../public/data/TestimonialsData";
+import { coaches } from "../../public/data/coaches";
 
 export default function Hometraining() {
   const [selected, setSelected] = useState(0);
@@ -27,12 +27,18 @@ export default function Hometraining() {
         <h2 className="section__title">
           Home <span className="highlights">Training</span> Program
         </h2>
-        <p>Please fill out the form below to get started on your fitness journey today!<br /></p>
+        <p>
+          Please fill out the form below to get started on your fitness journey
+          today!
+          <br />
+        </p>
       </div>
       <div className="htraining__form p-3 rounded">
         <div className="form bg-light" style={{ position: "relative" }}>
-          <form action="https://formsubmit.co/f7a1ee08534903dd0a8e158181025c8c" method="POST">
-            
+          <form
+            action="https://formsubmit.co/f7a1ee08534903dd0a8e158181025c8c"
+            method="POST"
+          >
             <div className="row mb-3">
               <div className="col">
                 <label htmlFor="firstName" className="form-label">
@@ -91,6 +97,17 @@ export default function Hometraining() {
                   name="IdCard"
                 />
               </div>
+              <div className="col">
+                <label htmlFor="address" className="form-label">
+                  Phone Number
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="phone"
+                  name="Phone Number"
+                />
+              </div>
             </div>
             <div className="row mb-3">
               <div className="col">
@@ -139,7 +156,9 @@ export default function Hometraining() {
               />
             </div>
             <div className="row mb-3">
-              <label className="form-label col">Do you have sport material :</label>
+              <label className="form-label col">
+                Do you have sport material :
+              </label>
               <div className="col">
                 <input
                   className="form-check-input mx-2"
@@ -176,7 +195,10 @@ export default function Hometraining() {
                     name="Pricing"
                     value="4 sessions/month , 6000 DA"
                   />
-                  <label className="form-check-label d-block" htmlFor="oneMonth">
+                  <label
+                    className="form-check-label d-block"
+                    htmlFor="oneMonth"
+                  >
                     4 sessions/month
                   </label>
                   <div className="text-muted">6000 DA</div>
@@ -191,7 +213,10 @@ export default function Hometraining() {
                     name="Pricing"
                     value="8 sessions/month , 10000 DA"
                   />
-                  <label className="form-check-label d-block" htmlFor="twoMonth">
+                  <label
+                    className="form-check-label d-block"
+                    htmlFor="twoMonth"
+                  >
                     8 sessions/month
                   </label>
                   <div className="text-muted">10000 DA</div>
@@ -217,39 +242,58 @@ export default function Hometraining() {
               <div className="left-tt">
                 <h2 name="Coach">{coaches[selected].name}</h2>
                 <ul>
-                  {coaches[selected].review.split(' - ').map((item, index) => (
+                  {coaches[selected].review.split(" - ").map((item, index) => (
                     <li key={index}>- {item}</li>
                   ))}
                 </ul>
                 <h5>
-                  {coaches[selected].name}
-                  {" "}
-                  - {coaches[selected].status}
+                  {coaches[selected].name} - {coaches[selected].status}
                 </h5>
               </div>
               <div className="right-tt">
                 <div></div>
                 <div></div>
                 <img src={coaches[selected].image} alt="" />
-                <div className="arrowss mt-3">
+                
+              </div>
+              
+            </div>
+            <div className="arrowss mt-1 d-flex justify-content-center align-items-center">
                   <svg
                     onClick={handlePreviousCoach}
-                    xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none">
-                    <path d="M6 12H18M6 12L11 7M6 12L11 17" stroke="#6f55f2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={40}
+                    height={40}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M6 12H18M6 12L11 7M6 12L11 17"
+                      stroke="#6f55f2"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                   <svg
                     onClick={handleNextCoach}
-                    xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none">
-                    <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#6f55f2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={40}
+                    height={40}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M6 12H18M18 12L13 7M18 12L13 17"
+                      stroke="#6f55f2"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </div>
-              </div>
-            </div>
 
-            <button
-              type="submit"
-              className="register__btn mt-5"
-            >
+            <button type="submit" className="register__btn mt-5">
               Send
             </button>
           </form>

@@ -24,22 +24,17 @@
     justify-content: center;
 }
 .form{
-   
     border-radius: 0.5rem;
     display: flex; 
     flex-direction: column;
     padding: 50px 60px;
     width: 70%; 
-    
-
 }
 .coachs{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
-    
-
+    margin-bottom: 25px;
 }
 .right-tt img {
     width: 17rem;
@@ -48,13 +43,16 @@
     background-color: #d3cef2;
 }
 .right-tt , .left--tt{
-    padding: 20px;
+    padding: 15px;
+}
+.left--tt{
+    flex: 1;
+    text-align: left;
 }
 .right-tt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* This centers the child elements horizontally */
-    justify-content: center;  /* This centers the child elements vertically if needed */
+    position: relative;
+    flex: 1;
+    text-align: right;
 }
 .coachs .left-tt h2{
     color: #d7337a;
@@ -79,5 +77,20 @@
     font-size: 1rem; 
     padding-left: 20px; /* Aligns the text under the label text */
 }
+@media (max-width: 754px) {
+    .right-tt img {
+        width: 13rem;
+        height: 15rem;
+        object-fit: cover;
+        background-color: #d3cef2;
+    }
+    .coachs .left-tt h2{
+        font-size: 20px;
+    }
+    .form{
+        padding: 10px 30px;
+        
+    }
+  }
 
 

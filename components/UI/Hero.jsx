@@ -1,5 +1,6 @@
 'use client'
 import React from "react";
+import { ReactTyped } from "react-typed";
 
 import { useRouter } from "next/navigation"
 import "../../styles/hero.css";
@@ -14,8 +15,9 @@ const Hero = () => {
 
           <div className="hero__content">
             <h2 className="section__title">
-              Exercise is the key to a
-              <span className="highlights"> Healthy</span> lifestyle
+                 
+              <span className="highlights">Exercise is </span> 
+                <ReactTyped strings={['the key  to a Healthy life style']} typeSpeed={40} loop />
             </h2>
 
             <p>
@@ -63,7 +65,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="heart__rate">
+              <div className="heart__rate" data-aos="fade-right" data-aos-duration="1100">
                 <h5>Heart Rate</h5>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +86,7 @@ const Hero = () => {
                 <h5>2567 BPM</h5>
               </div>
 
-              <div className="gym__location">
+              <div className="gym__location" data-aos="fade-left" data-aos-duration="1100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={30}
@@ -112,7 +114,7 @@ const Hero = () => {
                 </h5>
               </div>
 
-              <div className="dumble__icon">
+              <div className="dumble__icon" data-aos="fade-down" data-aos-duration="1100">
                 <img src={"./assets/img/dumble.png"} alt="" />
               </div>
             </div>

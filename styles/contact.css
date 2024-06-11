@@ -33,6 +33,19 @@
     width: 40%; 
 }
 
-
+@media (max-width: 754px) {
+    
+    .form{
+        padding: 10px 20px;
+        
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+    p{
+        font-size: small;
+    }
+  }
    
 
