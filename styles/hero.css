@@ -192,15 +192,15 @@ margin-top: 10px;
     .gym__location{
         position: absolute;
         top: -2%;
-        right: -33%;
-        padding: 0.5rem;
+        right: -35%;
+        padding: 0.2rem;
         width: 35%;
     }
     .heart__rate{
         width: 30%;
         top: 100%;
-        left: -4%;
-        padding: 10px 5px;
+        left: -10%;
+        padding: 6px 3px;
     }
     .dumble__icon{
         position: absolute;
@@ -208,18 +208,18 @@ margin-top: 10px;
         left: -2%;
     }
     .box-01{
-        width: 350px;
-        height: 350px;
-        
-    }
-    .box-02{
         width: 300px;
         height: 300px;
         
     }
-    .box-03{
+    .box-02{
         width: 250px;
         height: 250px;
+        
+    }
+    .box-03{
+        width: 200px;
+        height: 200px;
        
     }
     .box__img{

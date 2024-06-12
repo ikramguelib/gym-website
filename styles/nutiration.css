@@ -46,5 +46,14 @@
     color: greenyellow;
     font-size: large;
 }
+@media (max-width: 754px) {
+    
+    .form{
+        padding: 10px 20px;
+        width: 100%;
+        
+    }
+   
+  }
    
 

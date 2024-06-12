@@ -15,8 +15,6 @@ export default function Nutrition() {
       </div>
       <div className="nutirition__form  p-3 rounded">
         <div className="form bg-light" style={{ position: "relative" }}>
-          
-
           <form>
             <div className="row mb-3">
               <div className="col">

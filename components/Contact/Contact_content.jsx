@@ -66,6 +66,8 @@ export default function ContactContent() {
                 
               ></textarea>
             </div>
+            <input type="hidden" name="_subject" value="New Contact!"></input>
+            <input type="hidden" name="_template" value="box"></input>
             <div className="call d-flex justify-content-center align-items-center mt-3" style={{ color: "#C65BCF" }}>
               <p>Or Call Us On </p>
             </div>

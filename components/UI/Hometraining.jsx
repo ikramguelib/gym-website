@@ -39,6 +39,8 @@ export default function Hometraining() {
             action="https://formsubmit.co/f7a1ee08534903dd0a8e158181025c8c"
             method="POST"
           >
+            <input type="hidden" name="_template" value="table"></input>
+            <input type="hidden" name="_subject" value="New Home Training!"></input>
             <div className="row mb-3">
               <div className="col">
                 <label htmlFor="firstName" className="form-label">

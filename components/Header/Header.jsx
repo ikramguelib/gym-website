@@ -170,8 +170,48 @@ const Header = () => {
                 </svg>
               </li>
               <li className="border rounded d-flex align-items-center justify-content-between px-2 py-2 mt-2">
+                <Link href={"#start"} style={{textDecoration : 'none',color : 'black' ,width : "100%",height : "100%"}}>
+                  Training
+                </Link>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={20}
+                  height={20}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M10 7L15 12L10 17"
+                    stroke="#000000"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </li>
+              <li className="border rounded d-flex align-items-center justify-content-between px-2 py-2 mt-2">
                 <Link href={"#services"} style={{textDecoration : 'none',color : 'black',width : "100%",height : "100%"}}>
                   Services
+                </Link>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={20}
+                  height={20}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M10 7L15 12L10 17"
+                    stroke="#000000"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </li>
+              <li className="border rounded d-flex align-items-center justify-content-between px-2 py-2 mt-2">
+                <Link href={"#pricing"} style={{textDecoration : 'none',color : 'black',width : "100%",height : "100%"}}>
+                  Pricing
                 </Link>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -229,46 +269,8 @@ const Header = () => {
                   />
                 </svg>
               </li>
-              <li className="border rounded d-flex align-items-center justify-content-between px-2 py-2 mt-2">
-                <Link href={"#start"} style={{textDecoration : 'none',color : 'black' ,width : "100%",height : "100%"}}>
-                  Training
-                </Link>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M10 7L15 12L10 17"
-                    stroke="#000000"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </li>
-              <li className="border rounded d-flex align-items-center justify-content-between px-2 py-2 mt-2">
-                <Link href={"#pricing"} style={{textDecoration : 'none',color : 'black',width : "100%",height : "100%"}}>
-                  Pricing
-                </Link>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M10 7L15 12L10 17"
-                    stroke="#000000"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </li>
+             
+              
             </ul>
             <button
               className="btn btn-light d-sm-none d-flex gap-2 align-items-center justify-content-center fw-600 w-100"

@@ -51,7 +51,7 @@ export default function Training() {
                 </div>
                 
                 
-                <button type="submit" className=" register__btn btn btn-primary mt-5 ">Send</button>
+                <button type="submit" className=" register__btn mt-5 ">Send</button>
             </form>
         </div>
         </div>
