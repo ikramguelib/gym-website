@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "../../styles/hometraining.css";
 import { testimonialsData } from "../../public/data/TestimonialsData";
 import { coaches } from "../../public/data/coaches";
+import { Oval } from 'react-loader-spinner';
 
 export default function Hometraining() {
   const [selected, setSelected] = useState(0);
@@ -19,6 +20,11 @@ export default function Hometraining() {
     const newIndex = selected === tLength - 1 ? 0 : selected + 1;
     setSelected(newIndex);
     setSelectedCoach(coaches[newIndex].name);
+  };
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = (event) => {
+    setIsLoading(true);
   };
 
   return (
@@ -37,10 +43,14 @@ export default function Hometraining() {
         <div className="form bg-light" style={{ position: "relative" }}>
           <form
             action="https://formsubmit.co/f7a1ee08534903dd0a8e158181025c8c"
+            onSubmit={handleSubmit}
             method="POST"
+
           >
             <input type="hidden" name="_template" value="table"></input>
             <input type="hidden" name="_subject" value="New Home Training!"></input>
+            <input type="hidden" name="_captcha" value="false"></input>
+
             <div className="row mb-3">
               <div className="col">
                 <label htmlFor="firstName" className="form-label">
@@ -295,9 +305,26 @@ export default function Hometraining() {
                   </svg>
                 </div>
 
-            <button type="submit" className="register__btn mt-5">
-              Send
-            </button>
+                {isLoading && (
+                 <div className="d-flex justify-content-center align-items-center mt-3">
+                <Oval
+                  height={50}
+                  width={50}
+                  color="#c62acb"
+                  visible={true}
+                  ariaLabel="oval-loading"
+                  secondaryColor="#c62acb"
+                  strokeWidth={4}
+                  strokeWidthSecondary={4}
+                />
+              </div>
+            )}
+
+<div className="d-flex justify-content-center align-items-center">
+              <button type="submit" className="register__btn mt-5 px-5" disabled={isLoading}>
+                {isLoading ? 'Sending...' : 'Send'}
+              </button>
+            </div>
           </form>
         </div>
       </div>

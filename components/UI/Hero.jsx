@@ -13,11 +13,11 @@ const Hero = () => {
         <div className="hero__wrapper d-flex flex-wrap flex-md-nowrap justify-content-md-start justify-content-center gap-5">
           {/**________hero content______________ */}
 
-          <div className="hero__content">
-            <h2 className="section__title">
+          <div className="hero__content" >
+            <h2 className="section__title"style={{height:"27%"}}>
                  
               <span className="highlights">Exercise is </span> 
-                <ReactTyped strings={['the key  to a Healthy life style']} typeSpeed={40} loop />
+                <ReactTyped strings={['the key  to a Healthy life style']} typeSpeed={55}  loop />
             </h2>
 
             <p>

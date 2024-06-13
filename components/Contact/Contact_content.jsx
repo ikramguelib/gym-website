@@ -1,11 +1,14 @@
 'use client'
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../../styles/contact.css";
+import { Oval } from 'react-loader-spinner';
 
 export default function ContactContent() {
-  
+  const [isLoading, setIsLoading] = useState(false);
 
-  
+  const handleSubmit = (event) => {
+    setIsLoading(true);
+  };
 
   return (
     <div className="container">
@@ -19,7 +22,11 @@ export default function ContactContent() {
       </div>
       <div className="contact__form mb-5">
         <div className="form bg-light" style={{ position: "relative" }}>
-          <form action="https://formsubmit.co/f7a1ee08534903dd0a8e158181025c8c" method="POST">
+          <form
+            action="https://formsubmit.co/f7a1ee08534903dd0a8e158181025c8c"
+            method="POST"
+            onSubmit={handleSubmit}
+          >
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
                 Name
@@ -29,7 +36,6 @@ export default function ContactContent() {
                 className="form-control"
                 id="name"
                 name="name"
-                
               />
             </div>
             <div className="mb-3">
@@ -41,7 +47,6 @@ export default function ContactContent() {
                 className="form-control"
                 id="email"
                 name="email"
-                
               />
             </div>
             <div className="mb-3">
@@ -53,7 +58,6 @@ export default function ContactContent() {
                 className="form-control"
                 id="subject"
                 name="subject"
-                
               />
             </div>
             <div className="form-group">
@@ -63,11 +67,12 @@ export default function ContactContent() {
                 id="message"
                 name="message"
                 rows="3"
-                
               ></textarea>
             </div>
             <input type="hidden" name="_subject" value="New Contact!"></input>
             <input type="hidden" name="_template" value="box"></input>
+            <input type="hidden" name="_captcha" value="false"></input>
+
             <div className="call d-flex justify-content-center align-items-center mt-3" style={{ color: "#C65BCF" }}>
               <p>Or Call Us On </p>
             </div>
@@ -90,10 +95,25 @@ export default function ContactContent() {
               </svg>
               <p>031 726720</p>
             </div>
-           
+
+            {isLoading && (
+              <div className="d-flex justify-content-center align-items-center mt-3">
+                <Oval
+                  height={50}
+                  width={50}
+                  color="#c62acb"
+                  visible={true}
+                  ariaLabel="oval-loading"
+                  secondaryColor="#c62acb"
+                  strokeWidth={4}
+                  strokeWidthSecondary={4}
+                />
+              </div>
+            )}
+
             <div className="d-flex justify-content-center align-items-center">
-              <button type="submit" className="register__btn mt-5 px-5">
-                Send
+              <button type="submit" className="register__btn mt-5 px-5" disabled={isLoading}>
+                {isLoading ? 'Sending...' : 'Send'}
               </button>
             </div>
           </form>
